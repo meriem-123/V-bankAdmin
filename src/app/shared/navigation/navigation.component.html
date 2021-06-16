@@ -1,0 +1,56 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar class="logo">V-bank</mat-toolbar>
+    <mat-nav-list>
+      
+      <a mat-list-item routerLink="agencyList" class="item"><mat-icon>account_balance</mat-icon> Agences</a>
+
+      <a mat-list-item routerLink="adminList" class="item"><mat-icon>people_outline</mat-icon> Admins</a>
+      <a mat-list-item routerLink="currencyList" class="item"><mat-icon> monetization_on</mat-icon> Devises</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="header">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon" >menu</mat-icon>
+      </button>
+       <div fxFlex fxLayout="row" fxLayoutAlign="flex-end"  >
+        <ul fxLayout="row" fxLayoutGap="20px" class="header">
+          <!-- <li>
+            <button mat-icon-button>
+              <mat-icon>settings</mat-icon>
+            </button> 
+          </li>-->
+
+          <li>
+            <button mat-button [matMenuTriggerFor]="signOut" class="itemm">
+              Déconnexion
+            </button>
+            <mat-menu #signOut="matMenu">
+              <button mat-menu-item (click)="logOut()" >
+               
+                Se déconnecter
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+
+      
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,60 @@
+.full-page {
+  background-color: #141820;
+  height: 100%;
+}
+table {
+  width: 100%;
+  background-color: #21252d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.596);
+}
+.search {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.596);
+}
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.596);
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.blueButton {
+  background: #3f51b5;
+  color: white;
+  margin-right: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+
+  width: 200px !important;
+  min-width: unset !important;
+}
+.importer {
+  color: #3f51b5;
+}
+.borderBottom {
+  border-bottom: 1px solid #dee2e6;
+}
+.fullheight {
+  height: 100%;
+}
+.material-icons {
+  color: rgba(255, 255, 255, 0.596);
+}

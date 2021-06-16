@@ -1,0 +1,57 @@
+.sidenav-container {
+  height: 100%;
+  background-color: #141820;
+}
+
+.sidenav {
+  width: 130px;
+  background-color: #21252d;
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.sidenav .mat-toolbar {
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+ul li {
+  list-style: none;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.596);
+  background-color: #000;
+}
+.header {
+  background-color: #000;
+}
+a {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.596);
+  margin-top: 3rem;
+}
+.item {
+  color: rgba(255, 255, 255, 0.596);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.596);
+  letter-spacing: 1px;
+}
+.itemm {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.596);
+}
+mat-icon {
+  padding-right: 10px;
+}
